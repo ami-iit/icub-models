@@ -991,9 +991,7 @@
   </joint>
   <link name="imu_frame"/>
   <joint name="imu_frame_fixed_joint" type="fixed">
-    <!-- commenting out Bosch IMU and adding XSense IMU pose from iCubGenova01
-     <origin xyz="0.0034999999997785457 0.0054999999863750895 0.1013340000004441" rpy="-3.141592653589793 0 -1.570796326794897"/> -->
-    <origin xyz="0.009500000190735 0.133444 0.009299999999999996" rpy="-1.5707963267948961 1.570796326794896 0"/>
+    <origin xyz="0.0034999999997785457 0.0054999999863750895 0.1013340000004441" rpy="-3.141592653589793 0 -1.570796326794897"/> 
     <parent link="head"/>
     <child link="imu_frame"/>
     <dynamics damping="0.1"/>
@@ -1662,9 +1660,7 @@
   </gazebo>
   <sensor name="head_imu_acc_1x1" type="accelerometer">
     <parent link="head"/>
-    <!-- commenting out Bosch IMU and adding XSense IMU pose from iCubGenova01
-    <origin rpy="-3.141592653589793 -4.20000162559822e-15 -1.570796326794897" xyz="0.0034999999997785457 0.0054999999863750895 0.1013340000004441"/> -->
-  <origin rpy="-1.5707963267948963 1.5707963267948963 0.0" xyz="0.009500000190735 0.133444 0.009299999999999996"/>
+    <origin rpy="-3.141592653589793 -4.20000162559822e-15 -1.570796326794897" xyz="0.0034999999997785457 0.0054999999863750895 0.1013340000004441"/>
   </sensor>
   <gazebo reference="chest">
     <sensor name="realsense_chest_depth" type="depth">
